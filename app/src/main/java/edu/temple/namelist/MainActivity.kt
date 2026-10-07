@@ -41,6 +41,8 @@ class MainActivity : AppCompatActivity() {
         deleteButtton.setOnClickListener {
             val oldPos = spinner.selectedItemPosition
 
+
+
             (names as MutableList).removeAt(spinner.selectedItemPosition)
             (spinner.adapter as BaseAdapter).notifyDataSetChanged()
 
